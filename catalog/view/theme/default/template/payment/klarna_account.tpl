@@ -8,12 +8,7 @@
     <table class="radio">
       <?php foreach ($payment_options as $payment_option) { ?>
       <tr class="highlight">
-        <td><?php if (!isset($code)) { ?>
-          <?php $code = $payment_option['code']; ?>
-          <input type="radio" name="code" value="<?php echo $payment_option['code']; ?>" id="plan-id<?php echo $payment_option['code']; ?>" checked="checked" />
-          <?php } else { ?>
-          <input type="radio" name="code" value="<?php echo $payment_option['code']; ?>" id="plan-id<?php echo $payment_option['code']; ?>" />
-          <?php } ?></td>
+        <td><input type="radio" name="code" value="<?php echo $payment_option['code']; ?>" id="plan-id<?php echo $payment_option['code']; ?>" /></td>
         <td><label for="plan-id<?php echo $payment_option['code']; ?>"><?php echo $payment_option['title']; ?></label></td>
         <td style="width: 1%;"><?php if ($iso_code_3 == 'NLD') { ?>
           <img src="catalog/view/theme/default/image/klarna_nld_banner.png" />
@@ -54,7 +49,7 @@
         <td><input type="text" name="pno" value="" /></td>
       </tr>
       <?php } ?>
-      <?php } else { ?>
+      <?php } elseif (!$company_id) { ?>
       <tr>
         <td><?php echo $entry_company; ?></td>
         <td><input type="text" name="pno" value="" /></td>
@@ -103,7 +98,7 @@
   </div>
 </div>
 <script type="text/javascript"><!--
-$('#button-confirm').on('click', function() {
+$('#button-confirm').bind('click', function() {
 	$.ajax({
 		url: 'index.php?route=payment/klarna_account/send',
 		type: 'post',

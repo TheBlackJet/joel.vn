@@ -85,9 +85,10 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="view/javascript/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="view/javascript/ckeditor/ckeditor.js"></script> 
+<script type="text/javascript" src="view/javascript/ckeditor/adapters/jquery.js"></script> 
 <script type="text/javascript"><!--
-CKEDITOR.replace('message', {
+$('textarea[name=\'message\']').ckeditor({
 	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
 	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
 	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',

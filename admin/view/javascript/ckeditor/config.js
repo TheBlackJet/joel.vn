@@ -12,8 +12,6 @@ CKEDITOR.editorConfig = function( config ) {
 	config.resize_enabled = false;
 	config.htmlEncodeOutput = false;
 	config.entities = false;
-	config.extraPlugins = 'codemirror';
-	config.codemirror_theme = 'rubyblue';
 	config.toolbar = 'Custom';
 
 	config.toolbar_Custom = [

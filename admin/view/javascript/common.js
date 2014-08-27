@@ -56,12 +56,4 @@ $(document).ready(function() {
 		
 		$('a[href*=\'' + url + '\']').parents('li[id]').addClass('selected');
 	}
-	
-	$('#menu ul li').on('click', function() {
-		$(this).addClass('hover');
-	});
-
-	$('#menu ul li').on('mouseout', function() {
-		$(this).removeClass('hover');
-	});	
 });
