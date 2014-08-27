@@ -1,0 +1,536 @@
+/*--------------------------------------------------------------------------/
+* @Author		KulerThemes.com http://www.kulerthemes.com
+* @Copyright	Copyright (C) 2012 - 2013 KulerThemes.com. All rights reserved.
+* @License		KulerThemes.com Proprietary License
+/---------------------------------------------------------------------------*/
+
+/* MEGA MENU */
+.primary-define .megamenu {
+	z-index: 2;
+	position: relative;
+}
+.primary-define .megamenu li.product,
+.primary-define .megamenu li.category {
+	position: static;
+}
+.primary-define .megamenu li .dropdown-container {
+	z-index: 1;
+	margin: 0 !important;
+}
+.primary-define .megamenu li:hover .dropdown-container {
+	z-index: 2;
+}
+.primary-define .megamenu li.product .dropdown-container,
+.primary-define .megamenu li.category .dropdown-container {
+	left: 0;
+	width: 100%;
+}
+.primary-define .megamenu li.html .dropdown {
+	padding: 10px;
+	display: none;
+}
+.primary-define .megamenu li.html:hover .dropdown {
+	display: block;
+}
+.primary-define .megamenu li.product .dropdown {
+	padding: 10px;
+}
+.primary-define .megamenu li.category .dropdown {
+	padding: 15px;
+}
+.primary-define .megamenu li.category .dropdown .sublevel {
+	padding: 0;
+	float: none;
+	width: auto;
+	border: none;
+}
+.primary-define .megamenu li.category .dropdown .sublevel > li {
+	margin: 10px;
+	width: 240px;
+	vertical-align: top;
+	display: inline-block;
+}
+.primary-define .megamenu li.category .dropdown .subcat li a {
+	font-size: 15px;
+	padding-left: 18px;
+	display: inline-block;
+	background: url(../image/icons/icon-arrow-nav.png) left center no-repeat;
+}
+.primary-define .megamenu .sublevel li .menu-category-title {
+	color: #535353;
+	padding: 11px 0;
+	font-size: 16px;
+	font-weight: 600;
+	background: none;
+	margin-bottom: 11px;
+	border-bottom: 1px dashed #ddd;
+}
+.primary-define .megamenu .sublevel li:hover > .menu-category-title,
+.primary-define .megamenu .sublevel li.active > .menu-category-title {
+	background: none;
+}
+.primary-define .megamenu .sublevel li .menu-category-description {
+	color: #666;
+}
+.primary-define .megamenu .sublevel li .menu-category-image {
+	padding: 5px;
+	margin: 5px auto;
+	border: 1px solid #eee;
+}
+.primary-define .megamenu .sublevel li .menu-category-image.float-left {
+	float: left;
+}
+.primary-define .megamenu .sublevel li .menu-category-image.float-right {
+	float: right;
+}
+.primary-define .megamenu .box-product a {
+	padding: 0;
+}
+.primary-define .megamenu .box-product > div {
+	margin: 5px;
+	border-bottom: 1px solid transparent;
+}
+.primary-define .megamenu .box-product .details {
+	opacity: 1;
+	padding: 0;
+	border: none;
+	position: static;
+	margin: 5px 0 0 0;
+}
+.primary-define .megamenu .box-product .button {
+	color: #fff;
+	padding: 7px 15px;
+	display: inline-block;
+}
+.primary-define .megamenu .box-product .wishlist a,
+.primary-define .megamenu .box-product .compare a {
+	padding: 0;
+}
+/* FILTER */
+.primary-define .kuler-filter .box-content > div {
+	margin-top: 20px;
+}
+.primary-define .kuler-filter .box-content p {
+	color: #333;
+	font-weight: 600;
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+}
+.primary-define .kuler-filter .box-content select {
+	width: 100%;
+}
+.primary-define .kuler-filter .box-content .price-slide {
+	margin: 10px;
+}
+/* FINDER */
+.primary-define .kuler-finder .ui-menu {
+	right: -54px;
+	border: none;
+	background: #fff;
+	padding: 5px 20px;
+	z-index: 2 !important;
+	left: auto !important;
+	width: 500px !important;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.primary-define .kuler-finder .ui-menu li {
+	margin: 0;
+	padding: 0;
+}
+.primary-define .kuler-finder .box-product .image a {
+	line-height: normal !important;
+}
+.primary-define .kuler-finder .box-product .price {
+	min-width: 90px;
+}
+.primary-define .kuler-finder .box-product .name {
+	margin: 0;
+}
+.primary-define .kuler-finder .box-product .name a {
+	padding: 0;
+	font-size: 16px;
+}
+.primary-define .kuler-finder .box-product .rating {
+	margin: 0;
+}
+.primary-define .kuler-finder .box-product .description {
+	margin: 5px 0 0 0;
+}
+.primary-define .kuler-finder #load-more-container {
+	text-align: center;
+}
+.primary-define .kuler-finder #load-more-container a,
+.primary-define .kuler-finder li .ui-corner-all {
+	margin: 0;
+	border: none;
+	padding: 10px 0;
+	background: none;
+	text-align: center;
+	font: 14px Arial, Helvetica, sans-serif;
+	border-radius: 0;
+}
+.primary-define .kuler-finder select {
+	border: none;
+	font-weight: 400;
+	background-color: #fff;
+}
+/* CSS3 SLIDESHOW */
+.primary-define .kuler-css3-slideshow {
+	margin-top: 30px;
+}
+.primary-define .kuler-css3-slideshow .jcarousel,
+.primary-define .kuler-css3-slideshow .jcarousel-inner {
+	background: none;
+}
+.primary-define .kuler-css3-slideshow.bullet .slide_container {
+	top: -21px;
+}
+.primary-define .kuler-css3-slideshow .box-heading {
+	text-align: left;
+}
+.primary-define .kuler-css3-slideshow .kuler-module {
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	margin-top: 30px;
+	position: absolute;
+}
+/* NEWSLETTER */
+.primary-define .kuler-newsletter form span {
+	font-weight: 600;
+	margin-right: 5px;
+}
+.primary-define .kuler-newsletter form input,
+.primary-define .kuler-newsletter form button {
+	vertical-align: middle;
+}
+.primary-define .kuler-newsletter form .customer-email {
+	padding: 10px 0;
+	font-size: 13px;
+	margin-right: 2px;
+}
+/* TABS */
+.primary-define .kuler-tabs {
+	font-size: 13px;
+	line-height: 160%;
+	background: none !important;
+}
+.primary-define .kuler-tabs .box {
+	margin-bottom: -120px;
+	padding: 0 1px 150px 1px;
+}
+.primary-define .kuler-tabs ul.module-nav-list {
+	padding: 0 0 20px;
+	border-radius: 0;
+}
+.primary-define .kuler-tabs ul.module-nav-list li {
+	padding: 0;
+	border-radius: 0;
+}
+.primary-define .kuler-tabs ul.module-nav-list li a {
+	color: #aaa;
+	float: none;
+	display: block;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 120%;
+	padding: 5px 20px 9px 20px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.primary-define .kuler-tabs ul.module-nav-list .ui-state-active a,
+.primary-define .kuler-tabs ul.module-nav-list .ui-state-active:hover a {
+	color: #fff;
+}
+/* OUTSIDE CONTENT */
+.primary-define #column-left .kuler-tabs ul.module-nav-list,
+.primary-define #column-right .kuler-tabs ul.module-nav-list {
+	padding: 20px 0;
+}
+.primary-define #column-left .kuler-tabs ul.module-nav-list li a,
+.primary-define #column-right .kuler-tabs ul.module-nav-list li a {
+	padding: 0;
+	color: #535353;
+	background: none;
+}
+/* SLIDES */
+.primary-define .kuler-slides .box {
+	margin-bottom: -120px;
+	padding: 0 1px 150px 1px;
+}
+.primary-define .kuler-slides .jcarousel-prev,
+.primary-define .kuler-slides .jcarousel-next {
+	top: -53px;
+	left: auto;
+}
+.primary-define .kuler-slides .jcarousel-prev {
+	right: 31px;
+}
+/* ACCORDION */
+.primary-define .kuler-accordion .slide .name a {
+	font-size: 22px;
+}
+/* KULER BLOG MANAGER */
+.primary-define .kbm-recent-article ul {
+    margin: 0;
+}
+.primary-define .kbm-recent-article ul li {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 31.7%;
+    margin-right: 2%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+}
+.primary-define .kbm-recent-article ul li:last-child {
+    margin-right: 0;
+}
+.kbm-recent-article ul li .image {
+    overflow: hidden;
+    position: relative;
+}
+.kbm-recent-article ul li img{
+    -webkit-transition: all 1s cubic-bezier(0.190, 1.000, 0.220, 1.000) 0s;
+    -moz-transition: all 1s cubic-bezier(0.190, 1.000, 0.220, 1.000) 0s;
+    -ms-transition: all 1s cubic-bezier(0.190, 1.000, 0.220, 1.000) 0s;
+    transition: all 1s cubic-bezier(0.190, 1.000, 0.220, 1.000) 0s;
+}
+.kbm-recent-article ul li .read-more{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 0 !important;
+    opacity: 0;
+    visibility: hidden;
+}
+.kbm-recent-article ul li .read-more:before{
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 40%;
+    border: 3px solid #FFFFFF;
+    border-radius: 100%;
+    color: #FFFFFF;
+    content: "\e602";
+    font-size: 20px;
+    left: 40%;
+    padding: 11px;
+    position: absolute;
+    text-transform: none;
+    -webkit-transition: all 0.6s cubic-bezier(0.190, 1.000, 0.220, 1.000) 0.1s;
+    -moz-transition: all 0.6s cubic-bezier(0.190, 1.000, 0.220, 1.000) 0.1s;
+    -ms-transition: all 0.6s cubic-bezier(0.190, 1.000, 0.220, 1.000) 0.1s;
+    transition: all 0.6s cubic-bezier(0.190, 1.000, 0.220, 1.000) 0.1s;
+}
+.kbm-recent-article ul li:hover .read-more{
+    opacity: 1;
+    visibility: visible;
+}
+.primary-define .kbm-recent-article ul li span.date{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 8px;
+    color: #FFFFFF;
+}
+.primary-define .kbm-recent-article .box-heading a{
+    color: #000000;
+    color: rgba(0,0,0,.65);
+}
+.primary-define div[class*="article"] ul li a{
+    color: #222222 ;
+    font-size: 18px;
+    padding: 10px 15px 5px;
+    display: block;
+}
+.primary-define div[class*="article"] ul li p{
+    padding: 0 15px 15px;
+    margin: 0;
+}
+.primary-define .kbm-recent-article ul li:hover img {
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+}
+.primary-define #column-right div[class*="article"] ul li,
+.primary-define #column-left div[class*="article"] ul li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.primary-define #column-right div[class*="article"] ul li a,
+.primary-define #column-left div[class*="article"] ul li a{
+    display: block;
+    clear: both;
+    padding: 10px 0 0 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+}
+.primary-define #column-right div[class*="article"] ul li img,
+.primary-define #column-left div[class*="article"] ul li img{
+    float: none;
+    margin: 0;
+}
+.primary-define #column-right div[class*="article"] ul li p,
+.primary-define #column-left div[class*="article"] ul li p{
+    text-align: left;
+    padding: 0;
+}
+.primary-define #column-right div[class*="article"] ul li span.date,
+.primary-define #column-left div[class*="article"] ul li span.date{
+    position: relative;
+    top: auto;
+    right: auto;
+    background-color: transparent;
+    text-align: left;
+    color: #222222;
+    padding: 0;
+}
+.primary-define .blog-feed {
+    margin-top: -52px;
+    margin-bottom: 50px;
+}
+.primary-define .article {
+    margin-bottom: 30px;
+}
+.primary-define .article .article-read-more a {
+    text-align: left;
+    background-color: #222222;
+    padding: 8px 12px;
+    display: inline-block;
+    clear: both;
+}
+.primary-define .article .article-read-more a:hover {
+    background-color: #444444;
+}
+.primary-define .article-list + .pagination,
+.primary-define .comment-list + .pagination {
+    border: none;
+    padding: 0;
+}
+.primary-define .comment-container {
+    padding: 0;
+}
+.primary-define .comment-stats {
+    padding: 10px 20px;
+    background-color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+.primary-define .article-extra-info {
+    font-size: 0;
+    color: #b2b2b2;
+}
+.primary-define .article-extra-info time,
+.primary-define .article-extra-info a {
+    font-size: 14px;
+    margin-right: 15px;
+}
+.primary-define .comment-stats:before {
+    content: "\e612";
+    margin-right: 3px;
+}
+.primary-define .article-extra-info time:before {
+    content: "\e60c";
+    font-size: 14px;
+    margin-right: 3px;
+}
+.primary-define .article-extra-info .author:before {
+    content: "\e60e";
+    font-size: 14px;
+    margin-right: 3px;
+}
+.primary-define .article-extra-info .category:before {
+    content: "\e610";
+    font-size: 14px;
+    margin-right: 5px;
+}
+.primary-define .comment-list .comment {
+    padding: 0;
+    margin: 0;
+}
+.primary-define .author-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+.primary-define .article-header h2 {
+    margin-bottom: 25px;
+}
+.primary-define .article-header h2 a {
+    color: #535353;
+}
+.primary-define .kbm-latest-comment ul,
+.primary-define .kbm-latest-comment li {
+    margin: 0;
+}
+.primary-define .kbm-latest-comment li {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.primary-define .kbm-latest-comment li a {
+    color: #222222;
+}
+.primary-define .kbm-latest-comment li a.content {
+    font-weight: 600;
+}
+.primary-define .related-articles ul{
+    margin: 0;
+    width: auto;
+}
+.primary-define .related-articles ul li{
+    margin: 0 0 5px 20px;
+    list-style: circle;
+}
+.primary-define .related-articles ul li a{
+    font-size: 14px !important;
+}
+.primary-define .related-articles h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
+.primary-define .comment-container {
+    background-color: transparent;
+}
+.primary-define #form-comment td.validator input,
+.primary-define #form-comment td.validator img{
+    vertical-align: middle;
+}
+/* LAYER SLIDER */
+.primary-define .tp-simpleresponsive >ul >li,
+.primary-define .tp-simpleresponsive >ul{
+    margin: 0 !important;
+    z-index: 2 !important;
+}
+.primary-define .tp-simpleresponsive >ul >li iframe {
+    border: none;
+}
+.primary-define .bannercontainer.banner-fullwidth {
+    margin-bottom: 30px !important;
+}
+.primary-define .tp-top{
+    top: 0;
+    z-index: 2 !important;
+}
+.primary-define .bannercontainer .fullwidthbanner {
+    max-height: 700px !important;
+}
+.layerslider-wrapper {
+    margin-bottom: 30px !important;
+}
